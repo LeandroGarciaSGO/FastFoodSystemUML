@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Cadete" package="Datos" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="sentencia" type="Statement" visibility="private"/>
+        <Field name="rsDatos" type="ResultSet" visibility="private"/>
+        <Field name="psPrepSencencias" type="PreparedStatement" visibility="private"/>
+        <Field name="idCadete" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="domicilio" type="String" visibility="private"/>
+        <Field name="telefono" type="long" visibility="private"/>
+        <Field name="tipoDocumento" type="String" visibility="private"/>
+        <Field name="numDocumento" type="int" visibility="private"/>
+        <Field name="estado" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="int" name="numDoc"/>
+          <Argument type="String" name="nomb"/>
+          <Argument type="String" name="ape"/>
+          <Argument type="long" name="tel"/>
+          <Argument type="String" name="dom"/>
+          <Argument type="String" name="tipo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSentencia" returnType="Statement" visibility="public"/>
+        <Method name="setSentencia" returnType="void" visibility="public">
+          <Argument type="Statement" name="sentencia"/>
+        </Method>
+        <Method name="getRsDatos" returnType="ResultSet" visibility="public"/>
+        <Method name="setRsDatos" returnType="void" visibility="public">
+          <Argument type="ResultSet" name="rsDatos"/>
+        </Method>
+        <Method name="getPsPrepSencencias" returnType="PreparedStatement" visibility="public"/>
+        <Method name="setPsPrepSencencias" returnType="void" visibility="public">
+          <Argument type="PreparedStatement" name="psPrepSencencias"/>
+        </Method>
+        <Method name="getIdCadete" returnType="int" visibility="public"/>
+        <Method name="setIdCadete" returnType="void" visibility="public">
+          <Argument type="int" name="idCadete"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getDomicilio" returnType="String" visibility="public"/>
+        <Method name="setDomicilio" returnType="void" visibility="public">
+          <Argument type="String" name="domicilio"/>
+        </Method>
+        <Method name="getTelefono" returnType="long" visibility="public"/>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="long" name="telefono"/>
+        </Method>
+        <Method name="getTipoDocumento" returnType="String" visibility="public"/>
+        <Method name="setTipoDocumento" returnType="void" visibility="public">
+          <Argument type="String" name="tipoDocumento"/>
+        </Method>
+        <Method name="getNumDocumento" returnType="int" visibility="public"/>
+        <Method name="setNumDocumento" returnType="void" visibility="public">
+          <Argument type="int" name="numDocumento"/>
+        </Method>
+        <Method name="isEstado" returnType="boolean" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="boolean" name="estado"/>
+        </Method>
+        <Method name="consultaCadete2" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="dni"/>
+          <Argument type="int" name="cod"/>
+        </Method>
+        <Method name="consultaCadete" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="dni"/>
+        </Method>
+        <Method name="consultaEstado" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="idCadete"/>
+        </Method>
+        <Method name="obtenerCadete" returnType="ResultSet" visibility="public"/>
+        <Method name="consultarTodoLosCadetes" returnType="ResultSet" visibility="public"/>
+        <Method name="consultaCadeteConId" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="cod"/>
+        </Method>
+        <Method name="cargar" returnType="ResultSet" visibility="public"/>
+        <Method name="obtenerSiguienteId" returnType="int" visibility="public"/>
+        <Method name="eliminardni" returnType="int" visibility="public">
+          <Argument type="int" name="dni"/>
+        </Method>
+        <Method name="agregarNuevoCadete" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cliente" package="Datos" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="sentencia" type="Statement" visibility="private"/>
+        <Field name="rsDatos" type="ResultSet" visibility="private"/>
+        <Field name="psPrepSencencias" type="PreparedStatement" visibility="private"/>
+        <Field name="idCliente" type="int" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="domicilio" type="String" visibility="private"/>
+        <Field name="telefono" type="long" visibility="private"/>
+        <Field name="estado" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getIdCliente" returnType="int" visibility="public"/>
+        <Method name="setIdCliente" returnType="void" visibility="public">
+          <Argument type="int" name="idCliente"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getDomicilio" returnType="String" visibility="public"/>
+        <Method name="setDomicilio" returnType="void" visibility="public">
+          <Argument type="String" name="domicilio"/>
+        </Method>
+        <Method name="getTelefono" returnType="long" visibility="public"/>
+        <Method name="setTelefono" returnType="void" visibility="public">
+          <Argument type="long" name="telefono"/>
+        </Method>
+        <Method name="isEstado" returnType="boolean" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="boolean" name="estado"/>
+        </Method>
+        <Method name="obtenerCliente" returnType="ResultSet" visibility="public">
+          <Argument type="long" name="telef"/>
+        </Method>
+        <Method name="obtenerClienteFiltrado" returnType="ResultSet" visibility="public">
+          <Argument type="String" name="telefono"/>
+        </Method>
+        <Method name="obtenerClienteConId" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="obtenerSiguienteId" returnType="int" visibility="public"/>
+        <Method name="insertar" returnType="void" visibility="public"/>
+        <Method name="eliminar" returnType="void" visibility="public">
+          <Argument type="int" name="cod"/>
+        </Method>
+        <Method name="modificar" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Comida" package="Datos" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="sentencia" type="Statement" visibility="private"/>
+        <Field name="rsDatos" type="ResultSet" visibility="private"/>
+        <Field name="psPrepSencencias" type="PreparedStatement" visibility="private"/>
+        <Field name="idComida" type="int" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="precio" type="float" visibility="private"/>
+        <Field name="tipo" type="int" visibility="private"/>
+        <Field name="estado" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="desc"/>
+          <Argument type="float" name="pre"/>
+          <Argument type="int" name="tipo"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSentencia" returnType="Statement" visibility="public"/>
+        <Method name="getRsDatos" returnType="ResultSet" visibility="public"/>
+        <Method name="getPsPrepSencencias" returnType="PreparedStatement" visibility="public"/>
+        <Method name="getIdComida" returnType="int" visibility="public"/>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="getPrecio" returnType="Float" visibility="public"/>
+        <Method name="getTipo" returnType="int" visibility="public"/>
+        <Method name="isEstado" returnType="boolean" visibility="public"/>
+        <Method name="setSentencia" returnType="void" visibility="public">
+          <Argument type="Statement" name="sentencia"/>
+        </Method>
+        <Method name="setRsDatos" returnType="void" visibility="public">
+          <Argument type="ResultSet" name="rsDatos"/>
+        </Method>
+        <Method name="setPsPrepSencencias" returnType="void" visibility="public">
+          <Argument type="PreparedStatement" name="psPrepSencencias"/>
+        </Method>
+        <Method name="setIdComida" returnType="void" visibility="public">
+          <Argument type="int" name="idComida"/>
+        </Method>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="Float" name="precio"/>
+        </Method>
+        <Method name="setTipo" returnType="void" visibility="public">
+          <Argument type="int" name="tipo"/>
+        </Method>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="boolean" name="estado"/>
+        </Method>
+        <Method name="consultaComida" returnType="ResultSet" visibility="public">
+          <Argument type="String" name="desc"/>
+        </Method>
+        <Method name="consultarTodasLasComidas" returnType="ResultSet" visibility="public"/>
+        <Method name="consultaTipoComida" returnType="ResultSet" visibility="public"/>
+        <Method name="consultaComidaId" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="idComida"/>
+        </Method>
+        <Method name="consultaComidaId2" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="idComida"/>
+        </Method>
+        <Method name="obtenerSiguienteId" returnType="int" visibility="public"/>
+        <Method name="agregarNuevaComida" returnType="void" visibility="public"/>
+        <Method name="eliminar" returnType="void" visibility="public">
+          <Argument type="int" name="cod"/>
+        </Method>
+        <Method name="modificar" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

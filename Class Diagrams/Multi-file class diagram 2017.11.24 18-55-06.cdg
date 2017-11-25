@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Conexion" package="Datos" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Cadena" returnType="Connection" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="DetallePedido" package="Datos" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="sentencia" type="Statement" visibility="private"/>
+        <Field name="rsDatos" type="ResultSet" visibility="private"/>
+        <Field name="psPrepSencencias" type="PreparedStatement" visibility="private"/>
+        <Field name="idPedido" type="int" visibility="private"/>
+        <Field name="numLinea" type="int" visibility="private"/>
+        <Field name="idComida" type="int" visibility="private"/>
+        <Field name="cantidad" type="int" visibility="private"/>
+        <Field name="datoscomida" type="Comida" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getDatoscomida" returnType="Comida" visibility="public"/>
+        <Method name="setDatoscomida" returnType="void" visibility="public">
+          <Argument type="Comida" name="datoscomida"/>
+        </Method>
+        <Method name="getIdPedido" returnType="int" visibility="public"/>
+        <Method name="setIdPedido" returnType="void" visibility="public">
+          <Argument type="int" name="idPedido"/>
+        </Method>
+        <Method name="getNumLinea" returnType="int" visibility="public"/>
+        <Method name="setNumLinea" returnType="void" visibility="public">
+          <Argument type="int" name="numLinea"/>
+        </Method>
+        <Method name="getIdComida" returnType="int" visibility="public"/>
+        <Method name="setIdComida" returnType="void" visibility="public">
+          <Argument type="int" name="idComida"/>
+        </Method>
+        <Method name="getCantidad" returnType="int" visibility="public"/>
+        <Method name="setCantidad" returnType="void" visibility="public">
+          <Argument type="int" name="cantidad"/>
+        </Method>
+        <Method name="consultaDetallePedido" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="idPedido"/>
+        </Method>
+        <Method name="insertarDetallePedido" returnType="void" visibility="public"/>
+        <Method name="eliminarDetallePedido" returnType="void" visibility="public">
+          <Argument type="int" name="idPedido"/>
+        </Method>
+        <Method name="modificarDetallePedido" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Facturacion" package="Datos" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="sentencia" type="Statement" visibility="private"/>
+        <Field name="rsDatos" type="ResultSet" visibility="private"/>
+        <Field name="psPrepSencencias" type="PreparedStatement" visibility="private"/>
+        <Field name="numFactura" type="int" visibility="private"/>
+        <Field name="datospedido" type="Pedido" visibility="private"/>
+        <Field name="datoscliente" type="Cliente" visibility="private"/>
+        <Field name="importe" type="float" visibility="private"/>
+        <Field name="tarifaDeEnvio" type="float" visibility="private"/>
+        <Field name="estado" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getSentencia" returnType="Statement" visibility="public"/>
+        <Method name="setSentencia" returnType="void" visibility="public">
+          <Argument type="Statement" name="sentencia"/>
+        </Method>
+        <Method name="getRsDatos" returnType="ResultSet" visibility="public"/>
+        <Method name="setRsDatos" returnType="void" visibility="public">
+          <Argument type="ResultSet" name="rsDatos"/>
+        </Method>
+        <Method name="getPsPrepSencencias" returnType="PreparedStatement" visibility="public"/>
+        <Method name="setPsPrepSencencias" returnType="void" visibility="public">
+          <Argument type="PreparedStatement" name="psPrepSencencias"/>
+        </Method>
+        <Method name="getDatospedido" returnType="Pedido" visibility="public"/>
+        <Method name="setDatospedido" returnType="void" visibility="public">
+          <Argument type="Pedido" name="datospedido"/>
+        </Method>
+        <Method name="getDatoscliente" returnType="Cliente" visibility="public"/>
+        <Method name="setDatoscliente" returnType="void" visibility="public">
+          <Argument type="Cliente" name="datoscliente"/>
+        </Method>
+        <Method name="getNumFactura" returnType="int" visibility="public"/>
+        <Method name="setNumFactura" returnType="void" visibility="public">
+          <Argument type="int" name="numFactura"/>
+        </Method>
+        <Method name="getImporte" returnType="float" visibility="public"/>
+        <Method name="setImporte" returnType="void" visibility="public">
+          <Argument type="float" name="importe"/>
+        </Method>
+        <Method name="getTarifaDeEnvio" returnType="float" visibility="public"/>
+        <Method name="setTarifaDeEnvio" returnType="void" visibility="public">
+          <Argument type="float" name="tarifaDeEnvio"/>
+        </Method>
+        <Method name="isEstado" returnType="boolean" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="boolean" name="estado"/>
+        </Method>
+        <Method name="obtenerSiguienteId" returnType="int" visibility="public"/>
+        <Method name="obtenerFechaActual" returnType="String" visibility="public"/>
+        <Method name="insertar" returnType="void" visibility="public"/>
+        <Method name="insertarDetalle" returnType="void" visibility="public"/>
+        <Method name="obtenerFactura" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="anular" returnType="void" visibility="public">
+          <Argument type="int" name="numFactura"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

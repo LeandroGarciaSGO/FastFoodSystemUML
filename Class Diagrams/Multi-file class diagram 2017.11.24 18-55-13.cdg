@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="InformeActividad" package="Datos" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="sentencia" type="Statement" visibility="private"/>
+        <Field name="rsDatos" type="ResultSet" visibility="private"/>
+        <Field name="psPrepSencencias" type="PreparedStatement" visibility="private"/>
+        <Field name="idTransaccion" type="int" visibility="private"/>
+        <Field name="fecha" type="String" visibility="private"/>
+        <Field name="hora" type="String" visibility="private"/>
+        <Field name="idUsuario" type="int" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="tabla" type="String" visibility="private"/>
+        <Field name="idEntidad" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="obtenerTodasActividades" returnType="ResultSet" visibility="public">
+          <Argument type="String" name="i"/>
+          <Argument type="String" name="f"/>
+        </Method>
+        <Method name="getSentencia" returnType="Statement" visibility="public"/>
+        <Method name="setSentencia" returnType="void" visibility="public">
+          <Argument type="Statement" name="sentencia"/>
+        </Method>
+        <Method name="getRsDatos" returnType="ResultSet" visibility="public"/>
+        <Method name="setRsDatos" returnType="void" visibility="public">
+          <Argument type="ResultSet" name="rsDatos"/>
+        </Method>
+        <Method name="getPsPrepSencencias" returnType="PreparedStatement" visibility="public"/>
+        <Method name="setPsPrepSencencias" returnType="void" visibility="public">
+          <Argument type="PreparedStatement" name="psPrepSencencias"/>
+        </Method>
+        <Method name="getIdTransaccion" returnType="int" visibility="public"/>
+        <Method name="setIdTransaccion" returnType="void" visibility="public">
+          <Argument type="int" name="idTransaccion"/>
+        </Method>
+        <Method name="getFecha" returnType="String" visibility="public"/>
+        <Method name="setFecha" returnType="void" visibility="public">
+          <Argument type="String" name="fecha"/>
+        </Method>
+        <Method name="getHora" returnType="String" visibility="public"/>
+        <Method name="setHora" returnType="void" visibility="public">
+          <Argument type="String" name="hora"/>
+        </Method>
+        <Method name="getIdUsuario" returnType="int" visibility="public"/>
+        <Method name="setIdUsuario" returnType="void" visibility="public">
+          <Argument type="int" name="idUsuario"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getTabla" returnType="String" visibility="public"/>
+        <Method name="setTabla" returnType="void" visibility="public">
+          <Argument type="String" name="tabla"/>
+        </Method>
+        <Method name="getIdEntidad" returnType="int" visibility="public"/>
+        <Method name="setIdEntidad" returnType="void" visibility="public">
+          <Argument type="int" name="idEntidad"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Pedido" package="Datos" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="sentencia" type="Statement" visibility="private"/>
+        <Field name="rsDatos" type="ResultSet" visibility="private"/>
+        <Field name="psPrepSencencias" type="PreparedStatement" visibility="private"/>
+        <Field name="idPedido" type="int" visibility="private"/>
+        <Field name="idCliente" type="int" visibility="private"/>
+        <Field name="estado" type="int" visibility="private"/>
+        <Field name="fecha" type="Date" visibility="private"/>
+        <Field name="hora" type="Time" visibility="private"/>
+        <Field name="lugarDeEnvio" type="String" visibility="private"/>
+        <Field name="zona" type="int" visibility="private"/>
+        <Field name="idCadete" type="int" visibility="private"/>
+        <Field name="detalle" type="DetallePedido" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getIdPedido" returnType="int" visibility="public"/>
+        <Method name="setIdPedido" returnType="void" visibility="public">
+          <Argument type="int" name="idPedido"/>
+        </Method>
+        <Method name="getIdCliente" returnType="int" visibility="public"/>
+        <Method name="setIdCliente" returnType="void" visibility="public">
+          <Argument type="int" name="idCliente"/>
+        </Method>
+        <Method name="getEstado" returnType="int" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="int" name="estado"/>
+        </Method>
+        <Method name="getFecha" returnType="Date" visibility="public"/>
+        <Method name="setFecha" returnType="void" visibility="public">
+          <Argument type="Date" name="fecha"/>
+        </Method>
+        <Method name="getHora" returnType="Time" visibility="public"/>
+        <Method name="setHora" returnType="void" visibility="public">
+          <Argument type="Time" name="hora"/>
+        </Method>
+        <Method name="getLugarDeEnvio" returnType="String" visibility="public"/>
+        <Method name="setLugarDeEnvio" returnType="void" visibility="public">
+          <Argument type="String" name="lugarDeEnvio"/>
+        </Method>
+        <Method name="getZona" returnType="int" visibility="public"/>
+        <Method name="setZona" returnType="void" visibility="public">
+          <Argument type="int" name="zona"/>
+        </Method>
+        <Method name="getIdCadete" returnType="int" visibility="public"/>
+        <Method name="setIdCadete" returnType="void" visibility="public">
+          <Argument type="int" name="idCadete"/>
+        </Method>
+        <Method name="getDetalle" returnType="DetallePedido" visibility="public"/>
+        <Method name="setDetalle" returnType="void" visibility="public">
+          <Argument type="DetallePedido" name="detalle"/>
+        </Method>
+        <Method name="consultaPedido" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="idPedido"/>
+        </Method>
+        <Method name="consultaPedidoIdCliente" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="idCliente"/>
+        </Method>
+        <Method name="consultaCargarTabla" returnType="ResultSet" visibility="public">
+          <Argument type="String" name="idPedido"/>
+        </Method>
+        <Method name="insertarPedido" returnType="int" visibility="public"/>
+        <Method name="eliminarPedido" returnType="void" visibility="public">
+          <Argument type="int" name="idPedido"/>
+        </Method>
+        <Method name="modificarPedido" returnType="void" visibility="public"/>
+        <Method name="obtenerPedidosListos" returnType="ResultSet" visibility="public"/>
+        <Method name="obtenerDetallesPedidosListos" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="idPedido"/>
+        </Method>
+        <Method name="obtenerSiguienteIdPedido" returnType="int" visibility="public"/>
+        <Method name="modificarEstado" returnType="void" visibility="public">
+          <Argument type="int" name="est"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Transaccion" package="Datos" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="sentencia" type="Statement" visibility="private"/>
+        <Field name="rsDatos" type="ResultSet" visibility="private"/>
+        <Field name="psPrepSencencias" type="PreparedStatement" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="insertar" returnType="void" visibility="public">
+          <Argument type="String" name="mensaje"/>
+          <Argument type="String" name="entidad"/>
+          <Argument type="int" name="codigo"/>
+          <Argument type="int" name="idUsuario"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Datos.Pedido" target="Datos.Pedido" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Zona">
+  <ClassDiagramComponents>
+    <Class name="Zona" package="Datos" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="sentencia" type="Statement" visibility="private"/>
+        <Field name="rsDatos" type="ResultSet" visibility="private"/>
+        <Field name="psPrepSencencias" type="PreparedStatement" visibility="private"/>
+        <Field name="idZona" type="int" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="precio" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getIdZona" returnType="int" visibility="public"/>
+        <Method name="setIdZona" returnType="void" visibility="public">
+          <Argument type="int" name="idZona"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="void" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getPrecio" returnType="float" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="float" name="precio"/>
+        </Method>
+        <Method name="consultaZona" returnType="ResultSet" visibility="public"/>
+        <Method name="consultaZonaPorId" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="consultarTodasLasZonas" returnType="ResultSet" visibility="public"/>
+        <Method name="obtenerSiguienteId" returnType="int" visibility="public"/>
+        <Method name="eliminar" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="insertar" returnType="void" visibility="public"/>
+        <Method name="buscarZona" returnType="ResultSet" visibility="public"/>
+        <Method name="actualizar" returnType="void" visibility="public"/>
+        <Method name="buscarZonaDes" returnType="ResultSet" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

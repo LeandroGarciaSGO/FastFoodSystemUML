@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Multi-file class diagram">
   <ClassDiagramComponents>
-    <Class name="Cadete" package="Datos" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="Cadete" package="Datos" visibility="public" xPosition="12.0" yPosition="8.0">
       <Fields>
         <Field name="sentencia" type="Statement" visibility="private"/>
         <Field name="rsDatos" type="ResultSet" visibility="private"/>
@@ -96,7 +96,7 @@
         <Method name="agregarNuevoCadete" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Cliente" package="Datos" visibility="public" xPosition="320.0" yPosition="20.0">
+    <Class name="Cliente" package="Datos" visibility="public" xPosition="509.0" yPosition="8.0">
       <Fields>
         <Field name="sentencia" type="Statement" visibility="private"/>
         <Field name="rsDatos" type="ResultSet" visibility="private"/>
@@ -153,7 +153,7 @@
         <Method name="modificar" returnType="boolean" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Comida" package="Datos" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="Comida" package="Datos" visibility="public" xPosition="821.0" yPosition="8.0">
       <Fields>
         <Field name="sentencia" type="Statement" visibility="private"/>
         <Field name="rsDatos" type="ResultSet" visibility="private"/>

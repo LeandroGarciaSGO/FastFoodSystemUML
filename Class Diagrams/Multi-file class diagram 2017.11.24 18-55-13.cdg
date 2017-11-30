@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Multi-file class diagram">
   <ClassDiagramComponents>
-    <Class name="InformeActividad" package="Datos" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="InformeActividad" package="Datos" visibility="public" xPosition="9.0" yPosition="8.0">
       <Fields>
         <Field name="sentencia" type="Statement" visibility="private"/>
         <Field name="rsDatos" type="ResultSet" visibility="private"/>
@@ -65,7 +65,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Pedido" package="Datos" visibility="public" xPosition="320.0" yPosition="20.0">
+    <Class name="Pedido" package="Datos" visibility="public" xPosition="859.0" yPosition="8.0">
       <Fields>
         <Field name="sentencia" type="Statement" visibility="private"/>
         <Field name="rsDatos" type="ResultSet" visibility="private"/>
@@ -144,7 +144,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Transaccion" package="Datos" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="Transaccion" package="Datos" visibility="public" xPosition="430.0" yPosition="8.0">
       <Fields>
         <Field name="sentencia" type="Statement" visibility="private"/>
         <Field name="rsDatos" type="ResultSet" visibility="private"/>

@@ -9,7 +9,7 @@
         <Method name="Cadena" returnType="Connection" visibility="public" isStatic="true"/>
       </Methods>
     </Class>
-    <Class name="DetallePedido" package="Datos" visibility="public" xPosition="320.0" yPosition="20.0">
+    <Class name="DetallePedido" package="Datos" visibility="public" xPosition="227.0" yPosition="20.0">
       <Fields>
         <Field name="sentencia" type="Statement" visibility="private"/>
         <Field name="rsDatos" type="ResultSet" visibility="private"/>
@@ -54,7 +54,7 @@
         <Method name="modificarDetallePedido" returnType="boolean" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Facturacion" package="Datos" visibility="public" xPosition="620.0" yPosition="20.0">
+    <Class name="Facturacion" package="Datos" visibility="public" xPosition="576.0" yPosition="20.0">
       <Fields>
         <Field name="sentencia" type="Statement" visibility="private"/>
         <Field name="rsDatos" type="ResultSet" visibility="private"/>
